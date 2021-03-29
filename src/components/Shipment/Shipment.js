@@ -13,7 +13,7 @@ const Shipment = () => {
         const orderDetails = { ...loggedInUser, products: savedCart, shiptment: data, orderTime: new Date() };
 
 
-        fetch('https://shielded-scrubland-26386.herokuapp.com/addOrder', {
+        fetch('https://rocky-waters-29487.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

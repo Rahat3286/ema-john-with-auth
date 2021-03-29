@@ -12,12 +12,12 @@ const Shop = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        fetch('https://shielded-scrubland-26386.herokuapp.com/products')
+        fetch('https://rocky-waters-29487.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
     // useEffect(() => {
-    //     fetch('https://shielded-scrubland-26386.herokuapp.com/products')
+    //     fetch('https://rocky-waters-29487.herokuapp.com/products')
     //         .then(res => res.json())
     //         .then(data => setProducts(data))
     // }, [])
@@ -25,7 +25,7 @@ const Shop = () => {
     useEffect(() => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
-        fetch('https://shielded-scrubland-26386.herokuapp.com/productsByKeys', {
+        fetch('https://rocky-waters-29487.herokuapp.com/productsByKeys', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

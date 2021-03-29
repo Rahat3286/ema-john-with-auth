@@ -28,7 +28,7 @@ const Review = () => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
 
-        fetch('https://shielded-scrubland-26386.herokuapp.com/productsByKeys', {
+        fetch('https://rocky-waters-29487.herokuapp.com/productsByKeys', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

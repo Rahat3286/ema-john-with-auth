@@ -8,7 +8,7 @@ const ProductDetail = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch('https://shielded-scrubland-26386.herokuapp.com/products/' + productKey)
+        fetch('https://rocky-waters-29487.herokuapp.com/products/' + productKey)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [productKey])
